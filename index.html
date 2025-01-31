@@ -1,118 +1,55 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tudo sobre a Luna</title>
-    <style>
-        /* Estilos gerais */
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f9f9f9;
-            text-align: center;
-            animation: fadeIn 1s ease-in-out;
-        }
-
-        /* Cabeçalho estilizado */
-        header {
-            background: linear-gradient(135deg, #ff758c, #ff7eb3);
-            padding: 20px;
-            font-size: 28px;
-            font-weight: bold;
-            color: white;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            animation: slideDown 1s ease-in-out;
-        }
-
-        /* Container principal */
-        .container {
-            width: 90%;
-            max-width: 800px;
-            margin: 20px auto;
-            background: white;
-            padding: 20px;
-            border-radius: 12px;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-            animation: fadeIn 1s ease-in-out;
-        }
-
-        /* Imagens */
-        .image {
-            width: 100%;
-            max-height: 350px;
-            object-fit: cover;
-            border-radius: 12px;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        /* Efeito hover nas imagens */
-        .image:hover {
-            transform: scale(1.05);
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-        }
-
-        /* Lista estilizada */
-        ul {
-            text-align: left;
-            padding: 0;
-            list-style: none;
-        }
-
-        ul li {
-            background: #ffebee;
-            margin: 5px 0;
-            padding: 10px;
-            border-radius: 8px;
-            transition: transform 0.3s ease;
-        }
-
-        ul li:hover {
-            transform: scale(1.05);
-            background: #ffcdd2;
-        }
-
-        /* Rodapé */
-        footer {
-            background: linear-gradient(135deg, #ff758c, #ff7eb3);
-            padding: 15px;
-            color: white;
-            margin-top: 20px;
-            font-size: 16px;
-            box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
-            animation: slideUp 1s ease-in-out;
-        }
-    </style>
+    <title>Projeto Avançado - C.Silva</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
+    <header>
+        <div class="contact-info">
+            <span>C.Silva | <a href="mailto:csdesweb@gmail.com">csdesweb@gmail.com</a> | <a href="https://wa.me/5511991677373" target="_blank">WhatsApp</a></span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#projects">Projetos</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<header>
-    🐶 Tudo sobre a Luna 🐶
-</header>
+    <section id="projects">
+        <h2>Projetos Avançados</h2>
+        <div class="filter">
+            <label for="filter">Filtrar por categoria:</label>
+            <select id="filter">
+                <option value="all">Todos</option>
+                <option value="web">Web Design</option>
+                <option value="ecommerce">E-commerce</option>
+            </select>
+        </div>
 
-<div class="container">
-    <h2>Sobre a Raça</h2>
-    <p>O Maltês é um cachorro pequeno, famoso por sua pelagem branca e macia, além de ser extremamente carinhoso e fiel.</p>
+        <div class="project-list">
+            <div class="project-card web">
+                <h3>Projeto Web</h3>
+                <p>Descrição do projeto Web Design.</p>
+            </div>
+            <div class="project-card ecommerce">
+                <h3>Projeto E-commerce</h3>
+                <p>Descrição do projeto de E-commerce.</p>
+            </div>
+            <div class="project-card web">
+                <h3>Outro Projeto Web</h3>
+                <p>Descrição de outro projeto Web Design.</p>
+            </div>
+        </div>
+    </section>
 
-    <h2>Características</h2>
-    <ul>
-        <li>🐾 <a href="porte.html">Porte pequeno</a></li>
-        <li>🐾 <a href="pelagem.html">Pelagem longa e branca</a></li>
-        <li>🐾 <a href="temperamento.html">Temperamento dócil e brincalhona</a></li>
-        <li>🐾 <a href="companhia.html">Ótima companhia</a></li>
-        <li>🐾 <a href="origem.html">Nascimento: 16 de junho de 2015</a></li>
-    </ul>
-
-    <h2>Galeria de Fotos</h2>
-    <img src="4.jpg" alt="Maltês fofo" class="image">
-    <img src="2.jpg" alt="Maltês com laço azul" class="image">
-    <img src="3.jpg" alt="Maltês em estúdio fotográfico" class="image">
-</div>
-
-<footer>
-    &copy; 2025 Tudo sobre o Maltês 🐶💖
-</footer>
-
+    <footer>
+        <p>© 2025 C.Silva. Todos os direitos reservados.</p>
+    </footer>
 </body>
 </html>
