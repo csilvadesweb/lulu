@@ -3,53 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projeto Avançado - C.Silva</title>
+    <title>Portfólio - C.Silva</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
 <body>
+
+    <!-- Cabeçalho -->
     <header>
         <div class="contact-info">
             <span>C.Silva | <a href="mailto:csdesweb@gmail.com">csdesweb@gmail.com</a> | <a href="https://wa.me/5511991677373" target="_blank">WhatsApp</a></span>
         </div>
         <nav>
             <ul>
-                <li><a href="#home">Home</a></li>
+                <li><a href="#about">Sobre Mim</a></li>
                 <li><a href="#projects">Projetos</a></li>
+                <li><a href="#services">Serviços</a></li>
                 <li><a href="#contact">Contato</a></li>
             </ul>
         </nav>
     </header>
 
-    <section id="projects">
-        <h2>Projetos Avançados</h2>
-        <div class="filter">
-            <label for="filter">Filtrar por categoria:</label>
-            <select id="filter">
-                <option value="all">Todos</option>
-                <option value="web">Web Design</option>
-                <option value="ecommerce">E-commerce</option>
-            </select>
+    <!-- Seção de Boas-Vindas -->
+    <section id="welcome">
+        <div class="welcome-content">
+            <h1>Olá, sou C.Silva</h1>
+            <p>Desenvolvedor Web Freelancer | <a href="mailto:csdesweb@gmail.com">csdesweb@gmail.com</a></p>
+            <a href="https://wa.me/5511991677373" class="btn">Entre em Contato via WhatsApp</a>
         </div>
+    </section>
 
-        <div class="project-list">
-            <div class="project-card web">
-                <h3>Projeto Web</h3>
-                <p>Descrição do projeto Web Design.</p>
+    <!-- Sobre Mim -->
+    <section id="about">
+        <h2>Sobre Mim</h2>
+        <p>Sou C.Silva, um desenvolvedor web com experiência em criação de sites modernos e responsivos. Tenho paixão por tecnologia e busco sempre entregar resultados de qualidade.</p>
+    </section>
+
+    <!-- Projetos -->
+    <section id="projects">
+        <h2>Projetos Realizados</h2>
+        <div class="categories">
+            <div class="category" id="simple">
+                <h3>Projetos Simples</h3>
+                <div class="project-card">Projeto 1</div>
+                <div class="project-card">Projeto 2</div>
             </div>
-            <div class="project-card ecommerce">
-                <h3>Projeto E-commerce</h3>
-                <p>Descrição do projeto de E-commerce.</p>
+            <div class="category" id="intermediate">
+                <h3>Projetos Intermediários</h3>
+                <div class="project-card">Projeto 3</div>
+                <div class="project-card">Projeto 4</div>
             </div>
-            <div class="project-card web">
-                <h3>Outro Projeto Web</h3>
-                <p>Descrição de outro projeto Web Design.</p>
+            <div class="category" id="advanced">
+                <h3>Projetos Avançados</h3>
+                <div class="project-card">
+                    <a href="https://csilvadesweb.github.io/lulu/" target="_blank">Projeto Destaque</a>
+                </div>
             </div>
         </div>
     </section>
 
+    <!-- Serviços -->
+    <section id="services">
+        <h2>Serviços</h2>
+        <ul>
+            <li>Desenvolvimento Web Responsivo</li>
+            <li>Consultoria e Suporte Técnico</li>
+            <li>SEO e Otimização de Sites</li>
+        </ul>
+    </section>
+
+    <!-- Contato -->
+    <section id="contact">
+        <h2>Entre em Contato</h2>
+        <form id="contact-form">
+            <input type="text" id="name" name="name" placeholder="Seu nome" required>
+            <input type="email" id="email" name="email" placeholder="Seu e-mail" required>
+            <textarea id="message" name="message" placeholder="Sua mensagem" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Rodapé -->
     <footer>
         <p>© 2025 C.Silva. Todos os direitos reservados.</p>
+        <p>Contato: <a href="mailto:csdesweb@gmail.com">csdesweb@gmail.com</a> | <a href="https://wa.me/5511991677373" target="_blank">WhatsApp</a></p>
     </footer>
+
 </body>
 </html>
