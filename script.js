@@ -1,5 +1,5 @@
 document.getElementById("contact-form").addEventListener("submit", function (event) {
-    event.preventDefault();
+    event.preventDefault(); // Impede o envio padrão do formulário
 
     let name = document.getElementById("name").value.trim();
     let email = document.getElementById("email").value.trim();
@@ -10,9 +10,9 @@ document.getElementById("contact-form").addEventListener("submit", function (eve
         return;
     }
 
-    let phoneNumber = "5511991677373";
-    let whatsappMessage = `Olá, meu nome é ${name}.\nMeu e-mail: ${email}\nMensagem: ${message}`;
+    let phoneNumber = "5511991677373"; // Número do WhatsApp no formato correto
+    let whatsappMessage = `Olá, meu nome é ${name}. Meu e-mail: ${email}. Mensagem: ${message}`;
     let whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(whatsappMessage)}`;
 
-    window.open(whatsappURL, "_blank");
+    window.location.href = whatsappURL; // Redireciona diretamente para o WhatsApp
 });
