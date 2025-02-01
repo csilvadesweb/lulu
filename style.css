@@ -1,3 +1,4 @@
+/* Resetando estilos básicos */
 * {
     margin: 0;
     padding: 0;
@@ -5,108 +6,139 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f7f7f7;
     color: #333;
+    line-height: 1.6;
 }
 
+/* Cabeçalho */
 header {
-    background: #333;
-    padding: 20px;
-    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 1.5rem 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 header nav ul {
-    list-style: none;
-}
-
-header nav ul li {
-    display: inline;
-    margin: 0 15px;
+    display: flex;
+    gap: 2rem;
 }
 
 header nav ul li a {
     color: #fff;
-    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 0.5rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
 }
 
-.contact-info {
-    font-size: 14px;
-    color: #fff;
-    text-align: center;
-    margin-bottom: 10px;
+header nav ul li a:hover {
+    color: #00bcd4;
 }
 
-.contact-info a {
-    color: #00bfae;
-    text-decoration: none;
+header .whatsapp-btn {
+    background-color: #25D366;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-transform: uppercase;
 }
 
-.contact-info a:hover {
-    text-decoration: underline;
+/* Animação de Scroll Suave */
+.smooth-scroll {
+    transition: color 0.3s ease;
 }
 
+.smooth-scroll:hover {
+    color: #00bcd4;
+}
+
+/* Seção de Boas-Vindas */
 #welcome {
-    background: url('your-image.jpg') no-repeat center center;
-    background-size: cover;
-    height: 100vh;
+    background: #00bcd4;
     color: #fff;
+    padding: 8rem 0 5rem;
     text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    animation: fadeIn 2s ease-out;
 }
 
-#welcome .btn {
-    background-color: #00bfae;
-    padding: 10px 20px;
-    color: white;
-    border: none;
-    cursor: pointer;
-    text-decoration: none;
+#welcome h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
 }
 
-section {
-    padding: 50px 10%;
-    text-align: center;
-}
-
-#projects .categories {
-    display: flex;
-    justify-content: space-around;
-}
-
-.category {
-    width: 30%;
-}
-
-.project-card {
-    background: #f4f4f4;
-    padding: 20px;
-    margin: 10px 0;
+.cta-btn {
+    background-color: #fff;
+    color: #00bcd4;
+    padding: 1rem 2rem;
+    margin-top: 1.5rem;
+    font-size: 1rem;
     border-radius: 5px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease;
 }
 
-#contact-form input, #contact-form textarea {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-button {
-    background-color: #00bfae;
-    padding: 10px 20px;
+.cta-btn:hover {
+    background-color: #0097a7;
     color: white;
-    border: none;
-    cursor: pointer;
 }
 
-footer {
-    background: #333;
-    color: white;
-    text-align: center;
-    padding: 20px;
+/* Fade In Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Outros Estilos... */
+
+/* Animação para os cards de projeto */
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    animation: scaleUp 0.3s ease-in-out;
+}
+
+@keyframes scaleUp {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.05);
+    }
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    header .header-info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .cta-btn {
+        width: 100%;
+    }
 }
