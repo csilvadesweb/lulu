@@ -1,12 +1,10 @@
-document.getElementById("modo-toggle").addEventListener("click", function () {
-    document.body.classList.toggle("claro");
-    if (document.body.classList.contains("claro")) {
-        localStorage.setItem("modo", "claro");
-    } else {
-        localStorage.removeItem("modo");
-    }
-});
+// Animação de rolagem suave
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
 
-if (localStorage.getItem("modo") === "claro") {
-    document.body.classList.add("claro");
-}
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
