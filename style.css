@@ -1,175 +1,50 @@
-/* Cor de fundo e tipografia padrão */
-body {
-    background-color: #f0f4f8; /* Fundo suave */
-    color: #333;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
 
-/* Cabeçalho */
-header {
-    background: linear-gradient(135deg, #1abc9c, #16a085); /* Gradiente suave */
-    color: white;
-    padding: 20px;
+body {
+    background-color: #121212;
+    color: #fff;
     text-align: center;
 }
 
-header .contact-info {
-    font-size: 14px;
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background: #1e1e1e;
 }
 
-header nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+nav ul {
+    list-style: none;
     display: flex;
-    justify-content: center;
     gap: 20px;
 }
 
-header nav ul li {
+nav ul li {
     display: inline;
 }
 
-header nav ul li a {
+a {
     color: white;
     text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease;
 }
 
-header nav ul li a:hover {
-    color: #f39c12;
-}
-
-/* Seção de Boas-Vindas */
-#welcome {
-    background: linear-gradient(135deg, #2980b9, #8e44ad);
-    color: white;
-    padding: 80px 20px;
-    text-align: center;
-}
-
-#welcome h1 {
-    font-size: 48px;
-    margin-bottom: 10px;
-}
-
-#welcome .btn {
-    background-color: #27ae60;
-    color: white;
-    padding: 15px 30px;
-    border-radius: 5px;
-    text-decoration: none;
+.projeto-card {
+    background: #222;
+    padding: 20px;
+    margin: 10px;
     display: inline-block;
-    margin-top: 20px;
-    font-weight: bold;
-}
-
-#welcome .btn:hover {
-    background-color: #2ecc71;
-}
-
-/* Seções */
-section {
-    padding: 60px 20px;
-    text-align: center;
-}
-
-section h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
-    color: #2c3e50;
-}
-
-/* Projetos */
-.categories {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 30px;
-}
-
-.project-card {
-    background-color: #ecf0f1;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-}
-
-.project-card:hover {
-    transform: translateY(-10px);
-}
-
-.project-card a {
-    color: #2980b9;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-/* Formulário */
-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-form input, form textarea {
-    width: 100%;
-    padding: 15px;
-    border: 1px solid #bdc3c7;
     border-radius: 5px;
-    font-size: 16px;
 }
 
-form button {
-    background-color: #3498db;
-    color: white;
-    padding: 15px 30px;
+button {
+    padding: 10px;
+    background: #ff9800;
     border: none;
-    border-radius: 5px;
     cursor: pointer;
-}
-
-form button:hover {
-    background-color: #2980b9;
-}
-
-/* Rodapé */
-footer {
-    background-color: #34495e;
-    color: white;
-    text-align: center;
-    padding: 20px;
-}
-
-footer a {
-    color: #ecf0f1;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-footer a:hover {
-    color: #f39c12;
-}
-
-/* Responsividade */
-@media (max-width: 768px) {
-    header nav ul {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .categories {
-        grid-template-columns: 1fr;
-    }
-
-    #welcome h1 {
-        font-size: 36px;
-    }
+    color: #fff;
 }
