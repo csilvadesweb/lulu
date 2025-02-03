@@ -2,20 +2,22 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
 }
 
 body {
     background-color: #121212;
     color: #fff;
-    text-align: center;
+    transition: background-color 0.5s ease, color 0.5s ease;
 }
 
 header {
     display: flex;
     justify-content: space-between;
     padding: 20px;
-    background: #1e1e1e;
+    background-color: #1e1e1e;
+    border-bottom: 2px solid #ff9800;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 nav ul {
@@ -29,22 +31,112 @@ nav ul li {
 }
 
 a {
-    color: white;
+    color: #fff;
     text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
 }
 
-.projeto-card {
-    background: #222;
-    padding: 20px;
-    margin: 10px;
-    display: inline-block;
-    border-radius: 5px;
+a:hover {
+    color: #ff9800;
 }
 
 button {
-    padding: 10px;
-    background: #ff9800;
+    background-color: transparent;
     border: none;
-    cursor: pointer;
     color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+button:hover {
+    color: #ff9800;
+}
+
+.section {
+    padding: 60px;
+    text-align: center;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.projeto-card {
+    background-color: #222;
+    padding: 20px;
+    margin: 20px;
+    display: inline-block;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out, background-color 0.3s;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.projeto-card:hover {
+    transform: scale(1.1);
+    background-color: #333;
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.4);
+}
+
+footer {
+    background-color: #1e1e1e;
+    padding: 20px;
+    text-align: center;
+    color: #777;
+    font-size: 14px;
+    border-top: 2px solid #ff9800;
+}
+
+.claro {
+    background-color: #fff;
+    color: #121212;
+}
+
+.claro header, .claro footer {
+    background-color: #f0f0f0;
+    color: #121212;
+}
+
+.claro .projeto-card {
+    background-color: #f7f7f7;
+    color: #121212;
+}
+
+.claro .projeto-card:hover {
+    background-color: #e2e2e2;
+}
+
+input, textarea {
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 4px;
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid #ddd;
+    transition: border 0.3s ease;
+}
+
+input:focus, textarea:focus {
+    border-color: #ff9800;
+}
+
+button[type="submit"] {
+    padding: 15px 30px;
+    background-color: #ff9800;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #e68900;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
