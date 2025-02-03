@@ -1,99 +1,46 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio - C.Silva</title>
+    <title>C.Silva | Portfólio</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
 </head>
-
 <body>
-
-    <!-- Cabeçalho -->
     <header>
-        <div class="contact-info">
-            <span>C.Silva | <a href="mailto:csdesweb@gmail.com">csdesweb@gmail.com</a></span>
-        </div>
+        <h1>C.Silva</h1>
         <nav>
             <ul>
-                <li><a href="#about">Sobre Mim</a></li>
-                <li><a href="#projects">Projetos</a></li>
-                <li><a href="#services">Serviços</a></li>
-                <li><a href="#contact">Contato</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+                <li><button id="modo-toggle">🌙</button></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Seção de Boas-Vindas -->
-    <section id="welcome">
-        <div class="welcome-content">
-            <h1>Olá, sou C.Silva</h1>
-            <p>Desenvolvedor Web Freelancer | <a href="mailto:csdesweb@gmail.com">csdesweb@gmail.com</a></p>
-            <a href="https://wa.me/5511991677373?text=Olá,%20gostaria%20de%20fazer%20um%20orçamento!" class="btn">
-                Entre em Contato via WhatsApp
-            </a>
-        </div>
-    </section>
-
-    <!-- Sobre Mim -->
-    <section id="about">
+    <section id="sobre">
         <h2>Sobre Mim</h2>
-        <p>Sou C.Silva, um desenvolvedor web com experiência em criação de sites modernos e responsivos. Tenho paixão por tecnologia e busco sempre entregar resultados de qualidade.</p>
+        <p>Desenvolvedor Web apaixonado por tecnologia e inovação.</p>
     </section>
 
-    <!-- Projetos -->
-    <section id="projects">
-        <h2>Projetos Realizados</h2>
-        <div class="categories">
-            <div class="category">
-                <h3>Projetos Simples</h3>
-                <div class="project-card">Projeto 1</div>
-                <div class="project-card">Projeto 2</div>
-            </div>
-            <div class="category">
-                <h3>Projetos Intermediários</h3>
-                <div class="project-card">Projeto 3</div>
-                <div class="project-card">Projeto 4</div>
-            </div>
-            <div class="category">
-                <h3>Projetos Avançados</h3>
-                <div class="project-card">
-                    <a href="https://csilvadesweb.github.io/lulu/" target="_blank">Projeto Destaque</a>
-                </div>
-            </div>
-        </div>
+    <section id="projetos">
+        <h2>Meus Projetos</h2>
+        <div class="projeto-card">Projeto 1</div>
+        <div class="projeto-card">Projeto 2</div>
+        <div class="projeto-card">Projeto 3</div>
     </section>
 
-    <!-- Serviços -->
-    <section id="services">
-        <h2>Serviços</h2>
-        <ul>
-            <li>Desenvolvimento Web Responsivo</li>
-            <li>Consultoria e Suporte Técnico</li>
-            <li>SEO e Otimização de Sites</li>
-        </ul>
-    </section>
-
-    <!-- Contato -->
-    <section id="contact">
-        <h2>Entre em Contato</h2>
-        <form id="contact-form">
-            <input type="text" id="name" name="name" placeholder="Seu nome" required>
-            <input type="email" id="email" name="email" placeholder="Seu e-mail" required>
-            <textarea id="message" name="message" placeholder="Sua mensagem" required></textarea>
+    <section id="contato">
+        <h2>Contato</h2>
+        <form>
+            <input type="text" placeholder="Seu Nome" required>
+            <input type="email" placeholder="Seu E-mail" required>
+            <textarea placeholder="Sua Mensagem" required></textarea>
             <button type="submit">Enviar</button>
         </form>
     </section>
 
-    <!-- Rodapé -->
-    <footer>
-        <p>© 2025 C.Silva. Todos os direitos reservados.</p>
-        <p>Contato: <a href="mailto:csdesweb@gmail.com">csdesweb@gmail.com</a> | 
-           <a href="https://wa.me/5511991677373" target="_blank">WhatsApp</a></p>
-    </footer>
-
+    <script src="script.js"></script>
 </body>
-
 </html>
