@@ -8,7 +8,10 @@
 </head>
 <body>
     <header>
-        <h1>C.Silva</h1>
+        <div class="logo">
+            <h1>C.Silva</h1>
+            <p>Desenvolvedor Web</p>
+        </div>
         <nav>
             <ul>
                 <li><a href="#sobre">Sobre</a></li>
@@ -19,19 +22,19 @@
         </nav>
     </header>
 
-    <section id="sobre">
+    <section id="sobre" class="section">
         <h2>Sobre Mim</h2>
-        <p>Desenvolvedor Web apaixonado por tecnologia e inovação.</p>
+        <p>Sou um desenvolvedor web apaixonado por criar soluções criativas e funcionais para a web.</p>
     </section>
 
-    <section id="projetos">
+    <section id="projetos" class="section">
         <h2>Meus Projetos</h2>
-        <div class="projeto-card">Projeto 1</div>
-        <div class="projeto-card">Projeto 2</div>
-        <div class="projeto-card">Projeto 3</div>
+        <div class="projeto-card" data-aos="fade-up">Projeto 1</div>
+        <div class="projeto-card" data-aos="fade-up">Projeto 2</div>
+        <div class="projeto-card" data-aos="fade-up">Projeto 3</div>
     </section>
 
-    <section id="contato">
+    <section id="contato" class="section">
         <h2>Contato</h2>
         <form>
             <input type="text" placeholder="Seu Nome" required>
@@ -41,6 +44,14 @@
         </form>
     </section>
 
+    <footer>
+        <p>&copy; 2025 C.Silva</p>
+    </footer>
+
     <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
